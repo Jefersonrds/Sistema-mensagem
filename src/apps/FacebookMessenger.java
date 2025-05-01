@@ -1,7 +1,10 @@
+package apps;
 public class FacebookMessenger extends ServicoMensagemInstantanea{
 
     public void enviarMensagem() {
+        validarConectadoInternet();
         System.out.println("Enviando mensagem pelo Facebook Messenger");
+        salvarHistoricoMensagem();
         
     }
     
@@ -10,6 +13,6 @@ public class FacebookMessenger extends ServicoMensagemInstantanea{
         
     }
 
-
+  
     
 }
